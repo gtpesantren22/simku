@@ -57,8 +57,8 @@
                                 aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>MASTER DATA</a>
                             <ul class="sub-menu children dropdown-menu">
                                 <li><i class="fa fa-book"></i><a href="/datasantri">Data Santri</a></li>
-                                <li><i class="fa fa-book"></i><a href="/bp">Biaya Pendidikan</a></li>
-                                <li><i class="fa fa-book"></i><a href="/kode">Daftar Kode</a></li>
+                                <li><i class="fa fa-book"></i><a href="/lembaga">Data Lembaga</a></li>
+                                {{-- <li><i class="fa fa-book"></i><a href="/kode">Daftar Kode</a></li> --}}
                             </ul>
                         </li>
                         <li>
