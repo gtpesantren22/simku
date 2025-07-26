@@ -32,6 +32,7 @@ class PemasukanController extends Controller
             'penerima' => 'required|string',
         ]);
         // dd($request->all());
+        $pengajuan->status = 'proses';
         Pemasukan::create($request->all());
         return redirect('pemasukan')->with('success', 'Data berhasil ditambahkan');
     }

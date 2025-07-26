@@ -69,7 +69,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>PENGELUARAN</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-book"></i><a href="/data">Pengeluaran Lainnya</a></li>
+                                <li><i class="fa fa-book"></i><a href="/pengeluaran">Pengeluaran Lainnya</a></li>
                                 <li><i class="fa fa-book"></i><a href="/pengajuan">Pengajuan</a></li>
                             </ul>
                         </li>
