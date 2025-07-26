@@ -7,6 +7,7 @@ use App\Http\Controllers\PengajuanController;
 use App\Http\Controllers\PengajuanKPACOntroller;
 use App\Http\Controllers\PengeluaranController;
 use App\Http\Controllers\SpjController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
@@ -48,6 +49,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('pemasukan', PemasukanController::class);
     Route::resource('lembaga', LembagaController::class);
+    Route::resource('user', UserController::class);
 
     // Pengajuan
     Route::resource('pengajuan', PengajuanController::class);

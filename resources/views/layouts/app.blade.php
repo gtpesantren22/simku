@@ -45,20 +45,15 @@
                         <a href="/"> <i class="menu-icon fa fa-dashboard"></i>HOME</a>
                     </li>
 
-                    <li>
-                        <a href="/spj"> <i class="menu-icon fa fa-list"></i>SPJ Pengajuan</a>
-                    </li>
-                    <li>
-                        <a href="/pengajuan-kpa"> <i class="menu-icon fa fa-list"></i>Pengajuan KPA</a>
-                    </li>
+
                     @if (auth()->user()->role == 'admin')
                         <li class="menu-item-has-children dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>MASTER DATA</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-book"></i><a href="/datasantri">Data Santri</a></li>
+                                {{-- <li><i class="fa fa-book"></i><a href="/datasantri">Data Santri</a></li> --}}
                                 <li><i class="fa fa-book"></i><a href="/lembaga">Data Lembaga</a></li>
-                                {{-- <li><i class="fa fa-book"></i><a href="/kode">Daftar Kode</a></li> --}}
+                                <li><i class="fa fa-book"></i><a href="/user">Data User</a></li>
                             </ul>
                         </li>
                         <li>
@@ -74,6 +69,12 @@
                             </ul>
                         </li>
                     @endif
+                    <li>
+                        <a href="/spj"> <i class="menu-icon fa fa-list"></i>SPJ Pengajuan</a>
+                    </li>
+                    <li>
+                        <a href="/pengajuan-kpa"> <i class="menu-icon fa fa-list"></i>Pengajuan KPA</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
